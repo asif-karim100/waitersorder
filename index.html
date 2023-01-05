@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>waiter's orders api</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body >
+    <h1 class="header">Waiter's Orders</h1>
+    <section class="container">
+    <form  id="my-form" onsubmit="saveToLocalStorage(event)">
+        <div>
+        <label >Choose Price:</label>
+        <input type="number" id="prices" name="prices" placeholder="choose price" required>
+    </div>
+    
+    <div>
+        <label >Choose Dish:</label>
+        <input type="text" id="dish" name="dishes" placeholder="choose dishes" required>
+    </div>
+    <div>
+        <label > Choose a table:</label>
+        <select  id="table" name="table" required>
+            <option value="table1" id="table1">Table1</option>
+            <option value="table2">Table2</option>
+            <option value="table3">Table3</option>
+           
+
+        </select>
+
+    </div>
+    <input type="submit"  id="sub" value="Add Bill">
+    <!-- <div>
+       
+    </div> -->
+    
+
+    </form>uhj
+    <h3>User's Order</h3>
+    <ul id='list-group' class="table1">table1</ul>
+   
+
+     
+
+
+    </section>
+
+<script src="index.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.2.2/axios.min.js"></script>
+
+</body>
+</html>
